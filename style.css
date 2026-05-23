@@ -138,7 +138,7 @@ header {
       border: 1px solid black;
       height: 130px;
       padding: 20px 20px;
-      margin-top:25px;
+      margin-top: 25px;
       margin-left: 40px;
       display: flex;
       align-items: center;
@@ -167,7 +167,58 @@ header {
       &:hover {
         background-color: #5d3be6;
         box-shadow: -7px 7px 0px black;
-
+      }
+    }
+    /* adding about detailed section */
+    .about {
+      margin-right: 120px;
+      margin-top: 70px;
+      margin-left: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 3.5rem;
+      }
+      h5 {
+        font-size: 1.45rem;
+      }
+      /* .dropdown-container-content */
+      .dropdown-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .dropdown-items {
+          select {
+            height: 34px;
+            width: 220px;
+            /* padding: 10px; */
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+            &:hover {
+              border-color: #3a10e5;
+            }
+          }
+        }
+        .dropdown-items {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 10px;
+        }
+        .eighteen-projects {
+          position: absolute;
+          bottom: 45px;
+          right: 0;
+          display: inline-block;
+          text-align: bottomright;
+          /* color: red; */
+          margin-right: 120px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
       }
     }
   }
