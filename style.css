@@ -11,6 +11,10 @@ body {
   background-color: #fff0e5;
 }
 header {
+  /* position: sticky;
+  top: 0;
+  z-index: 1000; */
+
   img {
     width: 60px;
     height: auto;
@@ -218,6 +222,84 @@ header {
           /* color: red; */
           margin-right: 120px;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      }
+    }
+
+    /* adding project card section */
+    .card-heading {
+      font-size: 22px;
+      margin-left: 40px;
+      margin-top: 40px;
+    }
+    /* card containers */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      margin-left: 20px;
+      gap: 84px;
+      width: 100%;
+      h3 {
+        font-size: 22px;
+      }
+      /* card contents area */
+      .card-contents {
+        width: 350px;
+        height: 300px;
+        background-color: white;
+        /* each card css */
+        .card {
+          width: 350px;
+          height: 301.5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 20px;
+          padding-top: 18px;
+          padding-bottom: 12px;
+          gap: 12 px;
+          overflow: hidden;
+          border: 1px solid black;
+          border-radius: 5px;
+          transition: box-shadow 0.3s ease;
+          /* hover effect of card */
+          &:hover {
+            box-shadow: -5px 5px 0px black;
+          }
+
+          .first-line {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+          }
+
+          h6 {
+            font-size: 18px;
+            /* font-weight: 700; */
+            color: #333;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 480;
+            color: #333;
+          }
+          /* last element of card */
+          .foot-contents {
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+
+            .end-text {
+              background-color: rgb(245, 221, 221);
+              padding-right: 4px;
+              padding-left: 4px;
+              line-height: 24px;
+            }
+          }
         }
       }
     }
